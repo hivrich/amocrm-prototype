@@ -308,16 +308,18 @@ h2 {
 }
 
 .link-desc {
-  display: block;
+  display: -webkit-box;
   color: var(--muted);
   font-size: 12px;
   line-height: 1.35;
   margin-top: 2px;
   max-height: calc(2 * 1.35em);
   overflow: hidden;
-  display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  line-clamp: 2;
+  text-overflow: ellipsis;
+  word-break: break-word;
 }
 
 .placeholder {
