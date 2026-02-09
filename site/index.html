@@ -211,5 +211,17 @@
       <div class="footer-copy">© 2026 amoCRM. Все права защищены.</div>
     </div>
   </footer>
+
+  <script>
+    const menus = document.querySelectorAll(".main-nav details");
+    menus.forEach((menu) => {
+      menu.addEventListener("toggle", () => {
+        if (!menu.open) return;
+        menus.forEach((other) => {
+          if (other !== menu) other.removeAttribute("open");
+        });
+      });
+    });
+  </script>
 </body>
 </html>

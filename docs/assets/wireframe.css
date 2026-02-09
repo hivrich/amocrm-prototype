@@ -142,10 +142,10 @@ summary::-webkit-details-marker {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("./person.svg");
+  background-image: url("./woman.svg");
   background-repeat: no-repeat;
   background-position: right 8% bottom 0;
-  background-size: 280px auto;
+  background-size: auto 80%;
 }
 
 .kicker {
