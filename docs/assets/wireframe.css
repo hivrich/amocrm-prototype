@@ -392,6 +392,24 @@ h2 {
   display: block;
 }
 
+.mega-link.mega-cta {
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #f7f8fa;
+}
+
+.mega-link.mega-cta .link-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mega-link.mega-cta .cta-arrow {
+  font-size: 18px;
+}
+
 .mega-aside {
   display: grid;
   gap: 12px;
