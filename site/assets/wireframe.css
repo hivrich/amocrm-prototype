@@ -139,6 +139,13 @@ summary::-webkit-details-marker {
 .hero {
   background: var(--bg);
   padding: 70px 0 80px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("./person.svg");
+  background-repeat: no-repeat;
+  background-position: right 8% bottom 0;
+  background-size: 280px auto;
 }
 
 .kicker {
@@ -265,6 +272,7 @@ h2 {
   gap: 22px;
   min-width: 820px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  align-items: start;
 }
 
 .mega-wide {
@@ -294,6 +302,7 @@ h2 {
 .mega-aside {
   display: grid;
   gap: 12px;
+  align-content: start;
 }
 
 details[open] > .mega {
