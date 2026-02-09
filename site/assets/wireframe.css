@@ -12,6 +12,7 @@
 
 body {
   margin: 0;
+  font: 16px/1.5 "Arial", sans-serif;
   color: var(--text);
   background: var(--white);
 }
@@ -22,7 +23,7 @@ a {
 }
 
 .container {
-  width: min(1100px, 92vw);
+  width: min(1180px, 92vw);
   margin: 0 auto;
 }
 
@@ -55,7 +56,7 @@ a {
 .header-row {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 24px;
   padding: 14px 0;
 }
 
@@ -67,7 +68,7 @@ a {
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 22px;
   flex: 1;
 }
 
@@ -78,7 +79,7 @@ a {
 .menu-link,
 summary {
   cursor: pointer;
-  padding: 6px 4px;
+  padding: 6px 2px;
   list-style: none;
 }
 
@@ -122,7 +123,7 @@ summary::-webkit-details-marker {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 14px;
+  padding: 10px 16px;
   border: 1px solid var(--text);
   background: var(--text);
   color: var(--white);
@@ -221,7 +222,7 @@ h2 {
 .link-desc {
   display: block;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 12.5px;
   margin-top: 2px;
 }
 
@@ -253,27 +254,27 @@ h2 {
 
 .mega {
   position: absolute;
-  top: 36px;
+  top: 40px;
   left: 0;
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 18px;
+  padding: 24px 26px;
   display: grid;
   grid-template-columns: 1fr 1fr 260px;
-  gap: 18px;
-  min-width: 760px;
+  gap: 22px;
+  min-width: 820px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .mega-wide {
   grid-template-columns: 1fr 1fr 1fr 260px;
-  min-width: 980px;
+  min-width: 1040px;
 }
 
 .mega-col {
   display: grid;
-  gap: 8px;
+  gap: 12px;
 }
 
 .mega-title {
@@ -281,12 +282,12 @@ h2 {
   font-size: 12px;
   color: var(--muted);
   letter-spacing: 0.06em;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .mega-link {
   color: var(--text);
-  padding: 4px 0;
+  padding: 2px 0;
   display: block;
 }
 
