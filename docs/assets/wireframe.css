@@ -102,7 +102,9 @@ summary::-webkit-details-marker {
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 18px;
+  font-size: 13px;
+  text-transform: uppercase;
 }
 
 .icon-btn {
@@ -117,6 +119,17 @@ summary::-webkit-details-marker {
   width: 1px;
   height: 22px;
   background: var(--border);
+}
+
+.header-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.lock-icon {
+  font-size: 12px;
 }
 
 .btn {
@@ -142,10 +155,21 @@ summary::-webkit-details-marker {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("./woman.svg");
-  background-repeat: no-repeat;
-  background-position: right 8% bottom 0;
-  background-size: auto 80%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  right: 8%;
+  bottom: 0;
+  width: 320px;
+  height: 80%;
+  background: url("./woman.svg") no-repeat center bottom;
+  background-size: contain;
+  opacity: 0.2;
+  pointer-events: none;
 }
 
 .kicker {
@@ -179,7 +203,6 @@ h2 {
 
 .hero-form {
   display: grid;
-  grid-template-columns: 1fr auto;
   gap: 16px;
   margin-top: 26px;
   padding: 18px;
@@ -188,11 +211,22 @@ h2 {
   max-width: 820px;
 }
 
+.hero-title {
+  font-size: 56px;
+  font-weight: 800;
+}
+
+.hero-form-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+}
+
 .hero-form input {
   width: 100%;
   border: 1px solid var(--border);
-  padding: 14px 16px;
-  font-size: 22px;
+  padding: 18px 18px;
+  font-size: 26px;
   border-radius: 10px;
   background: #e7f0ff;
 }
@@ -205,6 +239,13 @@ h2 {
   text-decoration: underline;
   padding: 12px 24px;
   cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hero-form input:not(:placeholder-shown) + .link-button {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .sr-only {
@@ -297,7 +338,14 @@ h2 {
 
 .footer-links {
   display: flex;
-  gap: 12px;
+  gap: 10px;
+  align-items: center;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.footer-divider {
+  color: var(--muted);
 }
 
 .mega {
